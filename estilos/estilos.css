@@ -1,0 +1,47 @@
+/* Reseteo de CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+.titulo{
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    140px 30px
+}
+
+li{
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.menu{
+    background-color: #141414;
+    color: lightgrey;
+    text-align: center;
+}
+
+a{
+    color: #969696;
+    text-decoration: none;
+}
+
+.section{
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.footer{
+    background-color: #1d1d1d;
+    color: lightgrey;
+}
