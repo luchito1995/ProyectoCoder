@@ -41,6 +41,11 @@ a{
     color: white;
 }
 
+.section img{
+    margin: auto;
+    display: block;
+}
+
 .footer{
     background-color: #1d1d1d;
     color: lightgrey;
