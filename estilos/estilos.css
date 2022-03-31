@@ -1,52 +1,46 @@
 /* Reseteo de CSS */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html{
-    font-size: 62,5%;
+html {
+    font-size: 62, 5%;
 }
 
-.titulo{
-    background-color: #141414;
+.titulo {
+    background-image: linear-gradient(to left, red, yellow);
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
-    140px 30px
 }
 
-li{
+li {
     justify-content: space-evenly;
     padding: 20px;
 }
 
-.menu{
+.menu {
     background-color: #141414;
     color: lightgrey;
     text-align: center;
 }
 
-a{
+a {
     color: #969696;
     text-decoration: none;
 }
 
-.section{
+.section {
     background-color: #1d1d1d;
     color: white;
 }
 
-.section img{
-    margin: auto;
-    display: block;
-}
-
-.footer{
+.footer {
     background-color: #1d1d1d;
     color: lightgrey;
 }
