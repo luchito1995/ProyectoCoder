@@ -2,32 +2,47 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 62, 5%;
 }
 
+@font-face {
+    font-family: zaha;
+    src: url(zaha.ttf);
+}
+
 .titulo {
-    background-image: linear-gradient(to left, red, yellow);
-    color: white;
+    background-color: black;
     text-align: center;
-    padding: 20px;
+    padding: 1vw;
+    font-family: zaha;
+    font-size: 3vw;
+    margin: 0vw;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+}
+
+ul {
+    margin: 0vw;
 }
 
 nav ul li {
     display: inline-block;
-}
-
-li {
-    justify-content: space-evenly;
-    padding: 20px;
-}
-
-.menu {
-    background-color: #141414;
-    color: lightgrey;
-    text-align: center;
+    font-family: zaha;
+    font-size: 1.25vw;
+    padding-top: 1.25vw;
+    padding-bottom: 0vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 a {
@@ -35,12 +50,60 @@ a {
     text-decoration: none;
 }
 
-.section {
+section {
     background-color: #1d1d1d;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .footer {
-    background-color: #1d1d1d;
-    color: lightgrey;
+    background-color: black;
+    font-family: zaha;
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    margin-left: 0vw;
+    margin right: 0vw;
+}
+
+.footer_titulo {
+    color: #969696;
+    padding: 4vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0.5vw;
+    margin-bottom: 4vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 4vw;
+    height: auto;
+}
+
+.casas {
+    color: #969696;
+    font-family: zaha;
+    font-size: 2vw;
+}
+
+.row {
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #969696;
 }

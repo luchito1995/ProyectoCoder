@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseños Zaha Hadid</title>
+    <title>Zaha Hadid Architects</title>
+    <link rel="shortcut icon" type="image/x-icon" href="..\favicon.ico">
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,74 +21,93 @@
 
 <body>
     <header>
-        <h1 class="titulo">Diseños Zaha Hadid</h1>
-        <nav class="menu">
+        <h1 class="titulo"><a style="color: blueviolet;" href="..\index.html">Zaha Hadid Architects</a></h1>
+
+        <nav>
             <ul>
                 <li><a href="..\index.html">Inicio</a></li>
                 <li><a href=".\arquitectura.html">Arquitectura</a></li>
-                <li><a href=".\urbanizacion.html">Urbanizacion</a></li>
-                <li><a href=".\nosotros.html">Nosotros</a></li>
+                <li><a href=".\urbanismo.html">Urbanismo</a></li>
+                <li><a href=".\metaverso.html">Metaverso</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+    <section class="row g-0">
 
-    <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <h3 style="text-align: center; padding: 5vw; color: #969696; font-family: zaha;">Su consulta no molesta!</h3>
 
-    <section class="section">
-        <h3>Su consulta no molesta!</h3>
+                    <form action="" class="form">
+                        <label for="nombre" class="label">Ingrese su nombre:</label>
+                        <br>
+                        <input type="text" placeholder="Ingrese su nombre" name="nombre">
+                        <br>
 
-        <form action="">
-            <label for="nombre">Ingrese su nombre:</label>
-            <br>
-            <input type="text" placeholder="Ingrese su nombre" name="nombre">
-            <br>
+                        <label for="correo" class="label">Ingrese su correo:</label>
+                        <br>
+                        <input type="email" name="correo" id="" placeholder="Ingrese su correo">
+                        <br>
 
-            <label for="correo">Ingrese su correo:</label>
-            <br>
-            <input type="email" name="correo" id="" placeholder="Ingrese su correo">
-            <br>
+                        <label for="mensaje" class="label">Deje aqui su mensaje:</label>
+                        <br>
+                        <textarea name="mensaje" id="" cols="30" rows="10"
+                            placeholder="Deje su mensaje aqui"></textarea>
+                        <br>
 
-            <label for="mensaje">Deje aqui su mensaje:</label>
-            <br>
-            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Deje su mensaje aqui"></textarea>
-            <br>
+                        <!--BOTONES-->
 
-            <!--BOTONES-->
+                        <!--Boton para enviar-->
+                        <input type="submit" value="Enviar formulario">
 
-            <!--Boton para enviar-->
-            <input type="submit" value="Enviar formulario">
+                        <!--Boton para resetear-->
+                        <input type="reset" value="Resetear formulario">
 
-            <!--Boton para resetear-->
-            <input type="reset" value="Resetear formulario">
-
-            <!--Boton que no hace nada, pero sirve para javascript-->
-            <input type="button" value="No sirvo ahora">
+                        <!--Boton que no hace nada, pero sirve para javascript-->
+                        <input type="button" value="No sirvo ahora">
 
 
-        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <h3 class="footer_titulo">Sitios oficiales de Zaha Hadid Architects</h3>
+
+            <li><a href="https://www.facebook.com/ZHANews/" target="_blank" rel="noopener noreferrer nofollow"><img
+                        src="..\iconos\facebook.png" class="img-fluid"></a></li>
+
+            <li><a href="https://www.instagram.com/zahahadidarchitects/?hl=es" target="_blank"
+                    rel="noopener noreferrer nofollow"><img src="..\iconos\instagram.png" class="img-fluid"></a></li>
+
+            <li><a href="https://twitter.com/ZHA_News?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank" rel="noopener noreferrer nofollow"><img src="..\iconos\twitter.png"
+                        class="img-fluid"></a></li>
+
+            <li><a href="https://www.youtube.com/user/PatrikSchumacher/featured" target="_blank"
+                    rel="noopener noreferrer nofollow"><img src="..\iconos\youtube.png" class="img-fluid"></a></li>
+
+            <li><a href="https://www.archdaily.com/office/zaha-hadid-architects" target="_blank"
+                    rel="noopener noreferrer nofollow"><img src="..\iconos\archi.png" class="img-fluid"></a></li>
+
+            <li><a href="https://www.linkedin.com/company/zaha-hadid-architects" target="_blank"
+                    rel="noopener noreferrer nofollow"><img src="..\iconos\linkedin.png" class="img-fluid"></a></li>
+
+            <li><a href="https://en.wikipedia.org/wiki/Zaha_Hadid_Architects" target="_blank"
+                    rel="noopener noreferrer nofollow"><img src="..\iconos\wikipedia.png" class="img-fluid"></a></li>
+
+            <li><a href="https://www.zaha-hadid-design.com/ar/en/" target="_blank"
+                    rel="noopener noreferrer nofollow"><img src="..\iconos\carros.png" class="img-fluid"></a></li>
+
+            <li><a href="https://www.zaha-hadid.com/" target="_blank" rel="noopener noreferrer nofollow"><img
+                        src="..\iconos\web.png" class="img-fluid"></a></li>
+        </footer>
 
     </section>
-
-    <footer>
-        <hr>
-        <div class="footer">
-            <h3>Seguinos en nuestras redes sociales:</h3>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">Youtube</a>
-            <a href="#">Linkedin</a>
-            <a href="#">Pinterest</a>
-            <a href="#">Email</a>
-            <a href="#">Web</a>
-
-            <h3>Contáctenos:</h3>
-            <a href="#">Teléfono</a>
-            <a href="#">Celular</a>
-        </div>
-    </footer>
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
