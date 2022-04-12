@@ -23,8 +23,8 @@ html {
     font-size: 3rem;
     margin: 0em;
 
-    animation-name: CambiarColor;
-    animation-duration: 5s;
+    animation-name: cambiarColor;
+    animation-duration: 2s;
 }
 
 nav {
@@ -101,13 +101,18 @@ footer li {
     justify-content: center;
     color: #969696;
 }
- 
-@keyframes CambiarColor {
-    from{
-        background-color: black;
+
+@keyframes cambiarColor{
+    from {
+        color: black;
     }
 
     100% {
-        background-color: blue;
+        color: blueviolet;
     }
 }
+
+
+
+
+ 
