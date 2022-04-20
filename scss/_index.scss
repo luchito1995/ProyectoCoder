@@ -2,11 +2,6 @@
     font-family: zaha;
 }
 
-/*comentado
-section {
-    background-image: linear-gradient(135deg, #0e131f 50%, #38405f);
-}
-*/
 section {
     background-image: linear-gradient(135deg, black, #000814, #001d3d);
 }
@@ -15,67 +10,67 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 3em;
+}
 
-    .divIndex2 {
-        width: 18em;
-        height: 25em;
-        position: relative;
-        overflow: hidden;
-        margin-top: 3em;
-        margin-bottom: 0em;
-        margin-left: 0em;
-        margin-right: 3em;
-        padding: 0em;
-        border: .1em solid #000000
-    }
+.divIndex2 {
+    width: 18em;
+    height: 25em;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 3em;
+    padding: 0em;
+    border: .1em solid #000000
+}
 
-    .divIndex2 img {
-        width: 18em;
-        height: 25em;
-        object-fit: cover;
-        margin: 0em;
-    }
+.divIndex3 {
+    width: 18em;
+    height: 25em;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-bottom: 0em;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 0em;
+    border: .1em solid #000000
+}
 
-    .divIndex3 {
-        width: 18em;
-        height: 25em;
-        position: relative;
-        overflow: hidden;
-        margin-top: 3em;
-        margin-bottom: 0em;
-        margin-left: 3em;
-        margin-right: 3em;
-        padding: 0em;
-        border: .1em solid #000000
-    }
+.divIndex4 {
+    width: 18em;
+    height: 25em;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-bottom: 0em;
+    margin-left: 3em;
+    margin-right: 0em;
+    padding: 0em;
+    border: .1em solid #000000
+}
 
-    .divIndex3 img {
-        width: 18em;
-        height: 25em;
-        object-fit: cover;
-        margin: 0em;
-    }
+.divIndex2 img {
+    width: 18em;
+    height: 25em;
+    object-fit: cover;
+    margin: 0em;
+}
 
-    .divIndex4 {
-        width: 18em;
-        height: 25em;
-        position: relative;
-        overflow: hidden;
-        margin-top: 3em;
-        margin-bottom: 0em;
-        margin-left: 3em;
-        margin-right: 0em;
-        padding: 0em;
-        border: .1em solid #000000
-    }
+.divIndex3 img {
+    width: 18em;
+    height: 25em;
+    object-fit: cover;
+    margin: 0em;
+}
 
-    .divIndex4 img {
-        width: 18em;
-        height: 25em;
-        object-fit: cover;
-        margin: 0em;
-    }
+.divIndex4 img {
+    width: 18em;
+    height: 25em;
+    object-fit: cover;
+    margin: 0em;
 }
 
 .capa {
@@ -315,23 +310,4 @@ section {
         object-fit: cover;
         margin: 0em;
     }
-}
-
-.texto {
-    padding-left: 5em;
-    padding-right: 5em;
-    font-family: zaha;
-    margin-top: 1em;
-}
-
-.texto h2 {
-    color: #969696;
-    margin-top: 2em;
-}
-
-.texto p {
-    font-size: 1.1rem;
-    color: #969696;
-    margin-top: 2em;
-    margin-bottom: 0em;
 }

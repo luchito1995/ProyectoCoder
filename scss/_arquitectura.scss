@@ -1,0 +1,352 @@
+#carrousel1 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel1:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel2 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel2:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel3 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel3:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel4 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel4:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel5 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel5:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel6 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel6:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel7 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel7:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel8 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel8:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel9 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel9:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel10 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel10:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel11 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel11:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel12 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel12:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+#carrousel13 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    margin: auto;
+}
+
+#carrousel13:target {
+    position: sticky;
+    opacity: 1;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel__center {
+    margin: 0 auto;
+}
+
+/*Acá termina carrusel*/
+.div1 a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    height: 10em;
+    margin-top: 5em;
+}
+
+.div2:hover {
+    width: 100%;
+    height: 20em;
+    transition: all 2s;
+}
+
+.div2 p {
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    font-family: zaha;
+    font-size: 2rem;
+    color: white;
+    padding: 0em;
+    margin-left: 1em;
+    margin-right: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.fondo1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo9 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo10 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo11 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo12 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo13 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

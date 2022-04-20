@@ -710,12 +710,6 @@ footer li:hover {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 760px) {
-    .carousel {
-        width: 90%;
-    }
-}
-
 /*Acá termina carrusel*/
 .div1 a {
     display: flex;

@@ -13,19 +13,44 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--CSS-->
-    <link rel="stylesheet" href="..\estilos\estilos.css">
+    <link rel="stylesheet" href="..\estilos\styles.css">
 </head>
 
 <body class="row g-0">
     <header>
         <nav>
             <h1>Zaha Hadid Architects</h1>
-            <ul>
-                <li><a href="..\index.html">Inicio</a></li>
-                <li><a href=".\arquitectura.html">Arquitectura</a></li>
-                <li><a href=".\urbanismo.html">Urbanismo</a></li>
-                <li><a href="metaverso.html">Metaverso</a></li>
-                <li><a href=".\contacto.html">Contacto</a></li>
+        
+            <div id="toggle-menu" class="toggle-menu">
+        
+                <label for="toggle-menu-checkbox">
+                    <img src="../iconos/menu.png" alt="">
+                </label>
+            </div>
+        
+            <input type="checkbox" class="toggle-menu__checkbox" id="toggle-menu-checkbox">
+            <ul id="main-menu" class="main-menu">
+        
+                <li class="main-menu__item">
+                    <a href="../index.html" class="main-menu__link">Inicio</a>
+                </li>
+        
+                <li class="main-menu__item">
+                    <a href="./arquitectura.html" class="main-menu__link">Arquitectura</a>
+                </li>
+        
+                <li class="main-menu__item">
+                    <a href="./urbanismo.html" class="main-menu__link">Urbanismo</a>
+                </li>
+        
+                <li class="main-menu__item">
+                    <a href="metaverso.html" class="main-menu__link">Metaverso</a>
+                </li>
+        
+                <li class="main-menu__item">
+                    <a href="./contacto.html" class="main-menu__link">Contacto</a>
+                </li>
+        
             </ul>
         </nav>
     </header>
