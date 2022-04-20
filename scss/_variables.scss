@@ -1,2 +1,50 @@
-$colorPrincipal: black;
-$colorSecundario: #1d1d1d;
+/*--Extend--*/
+
+.divIndex2 {
+    width: 18em;
+    height: 25em;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 3em;
+    padding: 0em;
+    border: .1em solid #000000
+}
+
+.divIndex3 {
+    @extend .divIndex2;
+    margin-left: 3em;
+}
+
+.divIndex4 {
+    @extend .divIndex2;
+    margin-left: 3em;
+    margin-right: 0em;
+}
+
+/*--Mixin--*/
+
+@mixin tamaños ($width, $height, $margin, $object-fit) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+    object-fit: $object-fit;
+}
+
+.divIndex2 img {
+    @include tamaños (18em, 25em, 0em, cover);
+}
+
+/*--Mar-get--*/
+
+$estilos: (
+    color-de-fondo: linear-gradient(135deg, black, #000814, #001d3d),
+    alineacion-letra: center,
+)
+
+nav {
+    background-image: map-get($map: estilos, $key: color-de-fondo),
+    text-align: map-get($map: estilos, $key: alineacion-letra),
+}
