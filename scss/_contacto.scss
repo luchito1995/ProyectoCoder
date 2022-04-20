@@ -1,0 +1,26 @@
+.color_caja {
+    background-color: #ffffff10;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.texto {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-family: zaha;
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    width: 60%;
+    height: 30%;
+}
