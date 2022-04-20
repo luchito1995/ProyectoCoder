@@ -19,25 +19,27 @@ html {
 
 
 /*Navegador*/
-.titulo {
+nav {
     background-image: linear-gradient(135deg, black, #000814, #001d3d);
+}
+
+nav h1 {
     color: blueviolet;
     text-align: left;
     padding: 0.5em;
     font-family: zaha;
     font-size: 2.5rem;
     margin: 0em;
+    display: block;
 
-    animation-name: cambiarColor;
+    animation-name: opacidad;
     animation-duration: 3s;
 }
 
-nav {
-    background-image: linear-gradient(135deg, black, #000814, #001d3d);
-    text-align: center;
-}
-
-nav ul {
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
     margin: 0em;
 }
 
@@ -59,21 +61,77 @@ a {
     text-decoration: none;
 }
 
+@keyframes opacidad {
+    from {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 979px){
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.toggle-menu {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    width: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.toggle-menu__checkbox:checked + .main-menu {
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 980px) {
+    .toggle-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    nav ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav h1 {
+        text-align: center;
+        padding-bottom: 1.8em;
+    }
+
+    .toggle-menu {
+        position: fixed;
+        right: 43%;
+        top: 5rem;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .toggle-menu {
+        position: fixed;
+        right: 43%;
+        top: 8rem;
+    }
+}
+
 section {
     background-image: linear-gradient(135deg, black, #000814, #001d3d);
 }
 
-/*comentado
-@keyframes cambiarColor {
-    from {
-        color: black;
-    }
-
-    100% {
-        color: #969696;
-    }
-}
-*/
 
 
 

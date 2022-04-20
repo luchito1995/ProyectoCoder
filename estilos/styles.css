@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reseteo de CSS */
 * {
   margin: 0;
@@ -11,42 +12,115 @@ html {
   font-family: zaha;
   src: url(zaha.ttf); }
 
-.titulo {
-  background-image: linear-gradient(135deg, black, #000814, #001d3d);
+nav {
+  background-image: linear-gradient(135deg, black, #000814, #001d3d); }
+
+nav h1 {
+  padding: 1;
   color: blueviolet;
   text-align: left;
   padding: 0.5em;
   font-family: zaha;
   font-size: 2.5rem;
   margin: 0em;
-  animation-name: cambiarColor;
-  animation-duration: 2s; }
+  animation-name: opacidad;
+  animation-duration: 3s; }
 
-@keyframes cambiarColor {
+@keyframes opacidad {
   from {
     color: black; }
   100% {
     color: blueviolet; } }
 
-nav {
-  background-image: linear-gradient(135deg, black, #000814, #001d3d);
-  text-align: center; }
+.main-menu {
+  /*nav ul*/
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  transition: transform 1s;
+  transform: translateY(-300%); }
+
+.main-menu__item {
+  /*nav ul li*/
+  font-family: zaha;
+  font-size: 1.25rem;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em; }
+
+.main-menu__link {
+  /*nav ul li a*/
+  color: #969696;
+  text-decoration: none; }
+
+.toggle-menu {
+  /*png*/
+  width: 40px;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer; }
+
+img {
+  /*png*/
+  max-width: 100%; }
+
+.toggle-menu__checkbox:checked + .main-menu {
+  transform: translateY(0); }
+
+.toggle-menu__checkbox {
+  display: none; }
+
+/*Las pestañas se ponen una abajo de otra en celular*/
+@media screen and (min-width: 981px) {
+  .main-menu {
+    flex-direction: row;
+    transform: translateY(0); } }
+
+/*Desaparece el png cuando estamos en escritorio*/
+@media screen and (min-width: 981px) {
+  .toggle-menu {
+    display: none; } }
+
+@media screen and (max-width: 980px) {
+  nav {
+    background-image: none; }
+  nav h1 {
+    background-image: linear-gradient(135deg, black, #000814, #001d3d); }
   nav ul {
-    margin: 0em; }
-    nav ul li {
-      display: inline-block;
-      font-family: zaha;
-      font-size: 1.25rem;
-      padding-top: 0.5em;
-      padding-bottom: 0em;
-      padding-right: 2em;
-      padding-left: 2em;
-      margin-bottom: 0.5em;
-      margin-left: 0.5em;
-      margin-right: 0.5em; }
-      nav ul li a {
-        color: #969696;
-        text-decoration: none; }
+    background-color: black; }
+  .main-menu {
+    position: absolute;
+    width: 100vw; } }
+
+@media screen and (max-width: 500px) {
+  nav h1 {
+    text-align: center;
+    padding-bottom: 1.8em; }
+  .toggle-menu {
+    position: absolute;
+    right: 43%;
+    top: 5rem; } }
+
+@media screen and (max-width: 432px) {
+  .toggle-menu {
+    position: absolute;
+    right: 43%;
+    top: 8rem; } }
+
+@media screen and (max-width: 980px) {
+  nav ul {
+    margin: 0;
+    padding: 0; } }
 
 .textoIndex {
   font-family: zaha; }
@@ -64,7 +138,7 @@ section {
   justify-content: center;
   align-items: center;
   margin-top: 2em; }
-  .divIndex1 .divIndex2, .divIndex1 .divIndex3, .divIndex1 .divIndex4 {
+  .divIndex1 .divIndex2 {
     width: 18em;
     height: 25em;
     position: relative;
@@ -75,7 +149,7 @@ section {
     margin-right: 3em;
     padding: 0em;
     border: .1em solid #000000; }
-  .divIndex1 .divIndex2 img, .divIndex1 .divIndex3 img, .divIndex1 .divIndex4 img {
+  .divIndex1 .divIndex2 img {
     width: 18em;
     height: 25em;
     object-fit: cover;
@@ -127,7 +201,7 @@ section {
   transform: scale(0);
   transition: 1s; }
 
-.divIndex2:hover .capa, .divIndex3:hover .capa, .divIndex4:hover .capa {
+.divIndex2:hover .capa {
   transform: scale(1); }
 
 .divIndex3:hover .capa {
@@ -137,7 +211,7 @@ section {
   transform: scale(1); }
 
 @media only screen and (max-width: 1200px) {
-  .divIndex2, .divIndex3, .divIndex4 {
+  .divIndex2 {
     margin-left: 0em;
     margin-right: 2em; }
   .divIndex3 {
@@ -148,7 +222,7 @@ section {
     margin-right: 0em; } }
 
 @media only screen and (max-width: 992px) {
-  .divIndex2, .divIndex3, .divIndex4 {
+  .divIndex2 {
     margin-left: 0em;
     margin-right: 0em; }
   .divIndex3 {
@@ -159,7 +233,7 @@ section {
     margin-right: 0em; } }
 
 @media only screen and (max-width: 879px) {
-  .divIndex2, .divIndex3, .divIndex4 {
+  .divIndex2 {
     margin-left: 0em;
     margin-right: 0em;
     width: 16em;
@@ -176,7 +250,7 @@ section {
     height: 23em; } }
 
 @media only screen and (max-width: 783px) {
-  .divIndex2, .divIndex3, .divIndex4 {
+  .divIndex2 {
     margin-left: 0em;
     margin-right: 0em;
     width: 14em;
@@ -193,7 +267,7 @@ section {
     height: 19em; } }
 
 @media only screen and (max-width: 687px) {
-  .divIndex2, .divIndex3, .divIndex4 {
+  .divIndex2 {
     margin-left: 3.8em;
     margin-right: 3.8em;
     width: 18em;
@@ -208,7 +282,7 @@ section {
     margin-right: 3.8em;
     width: 18em;
     height: 17em; }
-  .divIndex2 img, .divIndex3 img, .divIndex4 img {
+  .divIndex2 img {
     width: 18em;
     height: 17em;
     object-fit: cover;
@@ -225,7 +299,7 @@ section {
     margin: 0em; } }
 
 @media only screen and (max-width: 576px) {
-  .divIndex2, .divIndex3, .divIndex4 {
+  .divIndex2 {
     margin-left: 3.8em;
     margin-right: 3.8em;
     width: 18em;
@@ -240,7 +314,7 @@ section {
     margin-right: 3.8em;
     width: 18em;
     height: 15em; }
-  .divIndex2 img, .divIndex3 img, .divIndex4 img {
+  .divIndex2 img {
     width: 18em;
     height: 15em;
     object-fit: cover;
@@ -257,7 +331,7 @@ section {
     margin: 0em; } }
 
 @media only screen and (max-width: 500px) {
-  .divIndex2, .divIndex3, .divIndex4 {
+  .divIndex2 {
     margin-left: 3.8em;
     margin-right: 3.8em;
     width: 15em;
@@ -272,7 +346,7 @@ section {
     margin-right: 3.8em;
     width: 15em;
     height: 13em; }
-  .divIndex2 img, .divIndex3 img, .divIndex4 img {
+  .divIndex2 img {
     width: 15em;
     height: 13em;
     object-fit: cover;
@@ -304,35 +378,8 @@ section {
   margin-top: 2em;
   margin-bottom: 0em; }
 
-/*--Extend--*/
-.divIndex2, .divIndex3, .divIndex4 {
-  width: 18em;
-  height: 25em;
-  position: relative;
-  overflow: hidden;
-  margin-top: 3em;
-  margin-bottom: 0em;
-  margin-left: 0em;
-  margin-right: 3em;
-  padding: 0em;
-  border: .1em solid #000000; }
-
-.divIndex3 {
-  margin-left: 3em; }
-
-.divIndex4 {
-  margin-left: 3em;
-  margin-right: 0em; }
-
-/*--Mixin--*/
-.divIndex2 img, .divIndex3 img, .divIndex4 img {
-  width: 18em;
-  height: 25em;
-  margin: 0em;
-  object-fit: cover; }
-
 footer {
-  background-image: linear-gradient(135deg, #000814, black);
+  background-image: linear-gradient(135deg, #001d3d, #000814, black);
   font-family: zaha;
   text-align: center;
   margin-top: 5em;
