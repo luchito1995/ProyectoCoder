@@ -47,9 +47,9 @@ nav h1 {
     padding-bottom: 0em;
     padding-right: 2em;
     padding-left: 2em;
-    margin-bottom: 0.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-bottom: 0.7em;
+    margin-left: 0em;
+    margin-right: 0em;
 }
 
 .main-menu__link {
@@ -72,10 +72,12 @@ img {
     max-width: 100%;
 }
 
+/*Se transladan las pestañas abajo cuando tocamos el png*/
 .toggle-menu__checkbox:checked+.main-menu {
     transform: translateY(0);
 }
 
+/*Desaparecen las pestañas cuando volvemos a tocar el png*/
 .toggle-menu__checkbox {
     display: none;
 }
@@ -95,6 +97,7 @@ img {
     }
 }
 
+/*Antes h1 y ul compartían fondo, ahora se dividen para poder hacer el navbar*/
 @media screen and (max-width: 980px) {
     nav {
         background-image: none;
@@ -112,11 +115,40 @@ img {
     .main-menu {
         position: absolute;
         width: 100vw;
+        z-index: 1;
     }
 }
 
 @media screen and (max-width: 476px) {
     nav h1 {
         text-align: center;
+    }
+}
+
+/*Todo sobre el icono*/
+.icono {
+    width: 70px;
+    max-width: 100%;
+    position: absolute;
+    top: 1.4rem;
+    left: 27rem;
+
+    animation-name: opacidad2;
+    animation-duration: 3s;
+}
+
+@media screen and (max-width: 559px) {
+    .icono {
+        display: none;
+    }
+}
+
+@keyframes opacidad2 {
+    from {
+        opacity: 0;
+    }
+
+    100% {
+        opacidad: 1;
     }
 }

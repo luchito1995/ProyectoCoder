@@ -52,9 +52,9 @@ nav h1 {
   padding-bottom: 0em;
   padding-right: 2em;
   padding-left: 2em;
-  margin-bottom: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em; }
+  margin-bottom: 0.7em;
+  margin-left: 0em;
+  margin-right: 0em; }
 
 .main-menu__link {
   /*nav ul li a*/
@@ -73,9 +73,11 @@ img {
   /*png*/
   max-width: 100%; }
 
+/*Se transladan las pestañas abajo cuando tocamos el png*/
 .toggle-menu__checkbox:checked + .main-menu {
   transform: translateY(0); }
 
+/*Desaparecen las pestañas cuando volvemos a tocar el png*/
 .toggle-menu__checkbox {
   display: none; }
 
@@ -90,6 +92,7 @@ img {
   .toggle-menu {
     display: none; } }
 
+/*Antes h1 y ul compartían fondo, ahora se dividen para poder hacer el navbar*/
 @media screen and (max-width: 980px) {
   nav {
     background-image: none; }
@@ -100,11 +103,32 @@ img {
     background-image: linear-gradient(45deg, black, #000814, #001d3d); }
   .main-menu {
     position: absolute;
-    width: 100vw; } }
+    width: 100vw;
+    z-index: 1; } }
 
 @media screen and (max-width: 476px) {
   nav h1 {
     text-align: center; } }
+
+/*Todo sobre el icono*/
+.icono {
+  width: 70px;
+  max-width: 100%;
+  position: absolute;
+  top: 1.4rem;
+  left: 27rem;
+  animation-name: opacidad2;
+  animation-duration: 3s; }
+
+@media screen and (max-width: 559px) {
+  .icono {
+    display: none; } }
+
+@keyframes opacidad2 {
+  from {
+    opacity: 0; }
+  100% {
+    opacidad: 1; } }
 
 .textoIndex {
   font-family: zaha; }
@@ -656,13 +680,15 @@ section {
 .color_caja {
   background-color: #ffffff10;
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); }
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 0; }
 
 .texto {
   position: relative;
   display: inline-block;
   text-align: center;
-  font-family: zaha; }
+  font-family: zaha;
+  z-index: 0; }
 
 .caja {
   display: flex;
@@ -675,7 +701,8 @@ section {
   border-radius: 1rem;
   box-sizing: border-box;
   width: 60%;
-  height: 30%; }
+  height: 30%;
+  z-index: 0; }
 
 footer {
   background-image: linear-gradient(135deg, #001d3d, #000814, black);

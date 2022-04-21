@@ -2,6 +2,7 @@
     background-color: #ffffff10;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    z-index: 0;
 }
 
 .texto {
@@ -9,6 +10,7 @@
     display: inline-block;
     text-align: center;
     font-family: zaha;
+    z-index: 0;
 }
 
 .caja {
@@ -23,4 +25,5 @@
     box-sizing: border-box;
     width: 60%;
     height: 30%;
+    z-index: 0;
 }
