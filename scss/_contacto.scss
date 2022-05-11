@@ -1,3 +1,4 @@
+/*IMAGEN PRINCIPAL*/
 .color_caja {
     background-color: #ffffff10;
     backdrop-filter: blur(8px);
@@ -26,4 +27,120 @@
     width: 60%;
     height: 30%;
     z-index: 0;
+}
+
+/*FORMULARIO*/
+.form {
+    font-family: zaha;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.formulario input {
+    border: 2px solid #343a40;
+    font-family: zaha;
+    background-color: black;
+    color: #969696;
+    font-size: 1.5rem;
+    display: block;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form-control {
+    margin-top: 1em;
+    margin-bottom: 0em;
+}
+
+.btn {
+    margin-top: 2.5em;
+    margin-bottom: 0em;
+}
+
+.textarea {
+    font-family: zaha;
+    border: 2px solid #343a40;
+    background-color: black;
+    color: #969696;
+    font-size: 1.5rem;
+    display: block;
+    width: 95%;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*CONTACTO*/
+.contacto {
+    background-image: linear-gradient(135deg, #001d3d, #000814, black);
+    font-family: zaha;
+    text-align: center;
+    margin-top: 7em;
+    margin-bottom: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 1.25em;
+
+    li {
+        display: inline-block;
+        padding: 0.75em;
+        margin-bottom: 1.5em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        width: 4em;
+        height: auto;
+
+        :hover {
+            transform: scale(1.15);
+        }
+    }
+}
+
+.textocontacto1 {
+    font-family: zaha;
+    font-size: 1.5rem;
+    color: #969696;
+    text-align: left;
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+.textocontacto2 {
+    font-family: zaha;
+    font-size: 1.5rem;
+    color: #969696;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-top: 5em;
+    padding-bottom: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
 }
