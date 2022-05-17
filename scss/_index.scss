@@ -236,40 +236,40 @@ section {
         margin-left: 3.8em;
         margin-right: 3.8em;
         width: 18em;
-        height: 17em;
+        height: 18em;
     }
 
     .divIndex3 {
         margin-left: 3.8em;
         margin-right: 3.8em;
         width: 18em;
-        height: 17em;
+        height: 18em;
     }
 
     .divIndex4 {
         margin-left: 3.8em;
         margin-right: 3.8em;
         width: 18em;
-        height: 17em;
+        height: 18em;
     }
 
     .divIndex2 img {
         width: 18em;
-        height: 17em;
+        height: 18em;
         object-fit: cover;
         margin: 0em;
     }
 
     .divIndex3 img {
         width: 18em;
-        height: 17em;
+        height: 18em;
         object-fit: cover;
         margin: 0em;
     }
 
     .divIndex4 img {
         width: 18em;
-        height: 17em;
+        height: 18em;
         object-fit: cover;
         margin: 0em;
     }
@@ -298,24 +298,18 @@ section {
     color: #969696;
 }
 
+.zha {
+    text-decoration: none;
+    color: blueviolet;
+}
+
 /*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
 @media only screen and (max-width:992px) {
     .textoprincipal h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .textoprincipal p {
         font-size: 1.25rem;
     }
-}
-
-@media only screen and (max-width:768px) {
-    .textoprincipal h2 {
-        font-size: 1.75rem;
-    }
-}
-
-.zha {
-    text-decoration: none;
-    color: blueviolet;
 }

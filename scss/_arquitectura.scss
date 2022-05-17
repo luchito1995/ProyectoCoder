@@ -372,3 +372,10 @@
         display: none;
     }
 }
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width:992px) {
+    .div1 p {
+        font-size: 1.75rem;
+    }
+}

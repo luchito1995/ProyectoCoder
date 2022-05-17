@@ -65,7 +65,7 @@ nav h1 {
   /*png*/
   width: 20px;
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   right: 1.5rem;
   cursor: pointer; }
 
@@ -109,6 +109,11 @@ img {
 @media screen and (max-width: 476px) {
   nav h1 {
     text-align: center; } }
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width: 980px) {
+  nav h1 {
+    font-size: 2rem; } }
 
 .textoIndex {
   font-family: zaha; }
@@ -295,30 +300,30 @@ section {
     margin-left: 3.8em;
     margin-right: 3.8em;
     width: 18em;
-    height: 17em; }
+    height: 18em; }
   .divIndex3 {
     margin-left: 3.8em;
     margin-right: 3.8em;
     width: 18em;
-    height: 17em; }
+    height: 18em; }
   .divIndex4 {
     margin-left: 3.8em;
     margin-right: 3.8em;
     width: 18em;
-    height: 17em; }
+    height: 18em; }
   .divIndex2 img {
     width: 18em;
-    height: 17em;
+    height: 18em;
     object-fit: cover;
     margin: 0em; }
   .divIndex3 img {
     width: 18em;
-    height: 17em;
+    height: 18em;
     object-fit: cover;
     margin: 0em; }
   .divIndex4 img {
     width: 18em;
-    height: 17em;
+    height: 18em;
     object-fit: cover;
     margin: 0em; } }
 
@@ -342,20 +347,16 @@ section {
   font-size: 1.5rem;
   color: #969696; }
 
-/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
-@media only screen and (max-width: 992px) {
-  .textoprincipal h2 {
-    font-size: 2rem; }
-  .textoprincipal p {
-    font-size: 1.25rem; } }
-
-@media only screen and (max-width: 768px) {
-  .textoprincipal h2 {
-    font-size: 1.75rem; } }
-
 .zha {
   text-decoration: none;
   color: blueviolet; }
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width: 992px) {
+  .textoprincipal h2 {
+    font-size: 1.75rem; }
+  .textoprincipal p {
+    font-size: 1.25rem; } }
 
 #carrousel1 {
   height: 100vh;
@@ -680,6 +681,11 @@ section {
   .botoncerrar1 {
     display: none; } }
 
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width: 992px) {
+  .div1 p {
+    font-size: 1.75rem; } }
+
 /*CARROUSEL*/
 .carrouselmetaverso {
   z-index: 0;
@@ -741,13 +747,9 @@ section {
 /*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
 @media only screen and (max-width: 992px) {
   .textometaverso h2 {
-    font-size: 2rem; }
+    font-size: 1.75rem; }
   .textometaverso p {
     font-size: 1.25rem; } }
-
-@media only screen and (max-width: 768px) {
-  .textometaverso h2 {
-    font-size: 1.75rem; } }
 
 /*IMAGEN PRINCIPAL*/
 .color_caja {
@@ -920,3 +922,8 @@ footer {
 @media (hover: hover) {
   li :hover {
     transform: scale(1.15); } }
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width: 992px) {
+  footer h2 {
+    font-size: 1.75rem; } }

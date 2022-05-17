@@ -74,16 +74,10 @@
 /*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
 @media only screen and (max-width:992px) {
     .textometaverso h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .textometaverso p {
         font-size: 1.25rem;
-    }
-}
-
-@media only screen and (max-width:768px) {
-    .textometaverso h2 {
-        font-size: 1.75rem;
     }
 }

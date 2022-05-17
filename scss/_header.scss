@@ -62,7 +62,7 @@ nav h1 {
     /*png*/
     width: 20px;
     position: absolute;
-    top: 2rem;
+    top: 1.5rem;
     right: 1.5rem;
     cursor: pointer;
 }
@@ -123,4 +123,11 @@ img {
     nav h1 {
         text-align: center;
     }
+}
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width:980px) {
+    nav h1 {
+            font-size: 2rem;
+        }
 }
