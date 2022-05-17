@@ -322,38 +322,6 @@ section {
     object-fit: cover;
     margin: 0em; } }
 
-@media only screen and (max-width: 576px) {
-  .divIndex2 {
-    margin-left: 3.8em;
-    margin-right: 3.8em;
-    width: 18em;
-    height: 15em; }
-  .divIndex3 {
-    margin-left: 3.8em;
-    margin-right: 3.8em;
-    width: 18em;
-    height: 15em; }
-  .divIndex4 {
-    margin-left: 3.8em;
-    margin-right: 3.8em;
-    width: 18em;
-    height: 15em; }
-  .divIndex2 img {
-    width: 18em;
-    height: 15em;
-    object-fit: cover;
-    margin: 0em; }
-  .divIndex3 img {
-    width: 18em;
-    height: 15em;
-    object-fit: cover;
-    margin: 0em; }
-  .divIndex4 img {
-    width: 18em;
-    height: 15em;
-    object-fit: cover;
-    margin: 0em; } }
-
 /*TEXTO*/
 .textoprincipal {
   font-family: zaha;
@@ -736,12 +704,6 @@ section {
   .carrouselmetaverso img {
     height: 20em; } }
 
-@media only screen and (max-width: 576px) {
-  .carrouselmetaverso {
-    height: 15em; }
-  .carrouselmetaverso img {
-    height: 15em; } }
-
 /*VIDEO*/
 .video {
   margin-top: 5em;
@@ -925,8 +887,8 @@ section {
     font-size: 1.25rem; }
   .formulario input {
     font-size: 1.25rem; }
-    .formulario input textarea {
-      font-size: 1.25rem; } }
+  .formulario textarea {
+    font-size: 1.25rem; } }
 
 footer {
   background-image: linear-gradient(135deg, #001d3d, #000814, black);
