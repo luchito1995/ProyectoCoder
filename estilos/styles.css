@@ -65,7 +65,7 @@ nav h1 {
   /*png*/
   width: 20px;
   position: absolute;
-  top: 1.5rem;
+  top: 2rem;
   right: 1.5rem;
   cursor: pointer; }
 
@@ -351,38 +351,6 @@ section {
   .divIndex4 img {
     width: 18em;
     height: 15em;
-    object-fit: cover;
-    margin: 0em; } }
-
-@media only screen and (max-width: 500px) {
-  .divIndex2 {
-    margin-left: 3.8em;
-    margin-right: 3.8em;
-    width: 15em;
-    height: 13em; }
-  .divIndex3 {
-    margin-left: 3.8em;
-    margin-right: 3.8em;
-    width: 15em;
-    height: 13em; }
-  .divIndex4 {
-    margin-left: 3.8em;
-    margin-right: 3.8em;
-    width: 15em;
-    height: 13em; }
-  .divIndex2 img {
-    width: 15em;
-    height: 13em;
-    object-fit: cover;
-    margin: 0em; }
-  .divIndex3 img {
-    width: 15em;
-    height: 13em;
-    object-fit: cover;
-    margin: 0em; }
-  .divIndex4 img {
-    width: 15em;
-    height: 13em;
     object-fit: cover;
     margin: 0em; } }
 
