@@ -422,6 +422,10 @@ section {
   .textoprincipal h2 {
     font-size: 1.75rem; } }
 
+.zha {
+  text-decoration: none;
+  color: blueviolet; }
+
 #carrousel1 {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
