@@ -20,14 +20,6 @@
     .carrouselmetaverso img {
         height: 25em;
     }
-
-    .video {
-        height: 25em;
-    }
-
-    .video iframe {
-        height: 25em;
-    }
 }
 
 @media only screen and (max-width:768px) {
@@ -38,14 +30,6 @@
     .carrouselmetaverso img {
         height: 20em;
     }
-
-    .video {
-        height: 20em;
-    }
-
-    .video iframe {
-        height: 25em;
-    }
 }
 
 @media only screen and (max-width:576px) {
@@ -54,14 +38,6 @@
     }
 
     .carrouselmetaverso img {
-        height: 15em;
-    }
-
-    .video {
-        height: 15em;
-    }
-
-    .video iframe {
         height: 15em;
     }
 }
@@ -103,4 +79,21 @@
     text-align: left;
     font-size: 1.5rem;
     color: #969696;
+}
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width:992px) {
+    .textometaverso h2 {
+        font-size: 2rem;
+    }
+
+    .textometaverso p {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .textometaverso h2 {
+        font-size: 1.75rem;
+    }
 }

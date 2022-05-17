@@ -10,7 +10,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 .divIndex2 {
@@ -88,16 +88,31 @@ section {
     transition: 1s;
 }
 
-.divIndex2:hover .capa {
-    transform: scale(1);
+.textopara992px {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
-.divIndex3:hover .capa {
-    transform: scale(1);
-}
+@media (hover: hover) {
+    .divIndex2:hover .capa {
+        transform: scale(1);
+    }
 
-.divIndex4:hover .capa {
-    transform: scale(1);
+    .divIndex3:hover .capa {
+        transform: scale(1);
+    }
+
+    .divIndex4:hover .capa {
+        transform: scale(1);
+    }
 }
 
 @media only screen and (max-width:1200px) {
@@ -121,16 +136,52 @@ section {
     .divIndex2 {
         margin-left: 0em;
         margin-right: 0em;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/a1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        img {
+            display: none;
+        }
+
+        .textopara992px {
+            opacity: 1;
+        }
     }
 
     .divIndex3 {
         margin-left: 0.5em;
         margin-right: 0.5em;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/h1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        img {
+            display: none;
+        }
+
+        .textopara992px {
+            opacity: 1;
+        }
     }
 
     .divIndex4 {
         margin-left: 0em;
         margin-right: 0em;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/metaverso.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        img {
+            display: none;
+        }
+
+        .textopara992px {
+            opacity: 1;
+        }
     }
 }
 
@@ -309,5 +360,45 @@ section {
         height: 13em;
         object-fit: cover;
         margin: 0em;
+    }
+}
+
+/*TEXTO*/
+.textoprincipal {
+    font-family: zaha;
+    margin-top: 5em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0em;
+}
+
+.textoprincipal h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    color: blueviolet;
+    margin-bottom: 0em;
+}
+
+.textoprincipal p {
+    margin-top: 2em;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #969696;
+}
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width:992px) {
+    .textoprincipal h2 {
+        font-size: 2rem;
+    }
+
+    .textoprincipal p {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .textoprincipal h2 {
+        font-size: 1.75rem;
     }
 }

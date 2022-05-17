@@ -7,7 +7,7 @@ footer {
     margin-left: 0em;
     margin-right: 0em;
 
-    .footer_titulo {
+    h2 {
         color: #969696;
         padding: 1em;
         font-size: 2rem;
@@ -22,13 +22,24 @@ footer {
         margin-right: 1.5em;
         width: 4em;
         height: auto;
-        :hover {
-            transform: scale(1.15);
-        }
     }
 }
 
 .pie {
     padding-top: 1em;
     padding-bottom: 2em;
+}
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width:992px) {
+    footer h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/*MEDIA PARA EL HOVER*/
+@media (hover: hover) {
+    li :hover {
+        transform: scale(1.15);
+    }
 }

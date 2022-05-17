@@ -65,7 +65,7 @@ nav h1 {
   /*png*/
   width: 20px;
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   right: 1.5rem;
   cursor: pointer; }
 
@@ -110,6 +110,11 @@ img {
   nav h1 {
     text-align: center; } }
 
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width: 980px) {
+  nav h1 {
+    font-size: 2rem; } }
+
 .textoIndex {
   font-family: zaha; }
 
@@ -120,7 +125,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3em; }
+  margin-top: 2em; }
 
 .divIndex2 {
   width: 18em;
@@ -190,14 +195,25 @@ section {
   transform: scale(0);
   transition: 1s; }
 
-.divIndex2:hover .capa {
-  transform: scale(1); }
+.textopara992px {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
 
-.divIndex3:hover .capa {
-  transform: scale(1); }
-
-.divIndex4:hover .capa {
-  transform: scale(1); }
+@media (hover: hover) {
+  .divIndex2:hover .capa {
+    transform: scale(1); }
+  .divIndex3:hover .capa {
+    transform: scale(1); }
+  .divIndex4:hover .capa {
+    transform: scale(1); } }
 
 @media only screen and (max-width: 1200px) {
   .divIndex2 {
@@ -213,13 +229,37 @@ section {
 @media only screen and (max-width: 992px) {
   .divIndex2 {
     margin-left: 0em;
-    margin-right: 0em; }
+    margin-right: 0em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/a1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .divIndex2 img {
+      display: none; }
+    .divIndex2 .textopara992px {
+      opacity: 1; }
   .divIndex3 {
     margin-left: 0.5em;
-    margin-right: 0.5em; }
+    margin-right: 0.5em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/h1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .divIndex3 img {
+      display: none; }
+    .divIndex3 .textopara992px {
+      opacity: 1; }
   .divIndex4 {
     margin-left: 0em;
-    margin-right: 0em; } }
+    margin-right: 0em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/metaverso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .divIndex4 img {
+      display: none; }
+    .divIndex4 .textopara992px {
+      opacity: 1; } }
 
 @media only screen and (max-width: 879px) {
   .divIndex2 {
@@ -350,6 +390,37 @@ section {
     height: 13em;
     object-fit: cover;
     margin: 0em; } }
+
+/*TEXTO*/
+.textoprincipal {
+  font-family: zaha;
+  margin-top: 5em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0em; }
+
+.textoprincipal h2 {
+  text-align: left;
+  font-size: 2.5rem;
+  color: blueviolet;
+  margin-bottom: 0em; }
+
+.textoprincipal p {
+  margin-top: 2em;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #969696; }
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width: 992px) {
+  .textoprincipal h2 {
+    font-size: 2rem; }
+  .textoprincipal p {
+    font-size: 1.25rem; } }
+
+@media only screen and (max-width: 768px) {
+  .textoprincipal h2 {
+    font-size: 1.75rem; } }
 
 #carrousel1 {
   height: 100vh;
@@ -561,11 +632,6 @@ section {
   height: 10em;
   margin-top: 5em; }
 
-.div2:hover {
-  width: 100%;
-  height: 20em;
-  transition: all 2s; }
-
 .div2 p {
   display: flex;
   justify-content: left;
@@ -578,6 +644,12 @@ section {
   margin-right: 0em;
   margin-top: 0em;
   margin-bottom: 0em; }
+
+@media (hover: hover) {
+  .div2:hover {
+    width: 100%;
+    height: 20em;
+    transition: all 2s; } }
 
 .fondo1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/a1.jpg);
@@ -689,30 +761,18 @@ section {
   .carrouselmetaverso {
     height: 25em; }
   .carrouselmetaverso img {
-    height: 25em; }
-  .video {
-    height: 25em; }
-  .video iframe {
     height: 25em; } }
 
 @media only screen and (max-width: 768px) {
   .carrouselmetaverso {
     height: 20em; }
   .carrouselmetaverso img {
-    height: 20em; }
-  .video {
-    height: 20em; }
-  .video iframe {
-    height: 25em; } }
+    height: 20em; } }
 
 @media only screen and (max-width: 576px) {
   .carrouselmetaverso {
     height: 15em; }
   .carrouselmetaverso img {
-    height: 15em; }
-  .video {
-    height: 15em; }
-  .video iframe {
     height: 15em; } }
 
 /*VIDEO*/
@@ -749,10 +809,16 @@ section {
   font-size: 1.5rem;
   color: #969696; }
 
-.liberland {
-  text-decoration: none;
-  color: blueviolet;
-  cursor: pointer; }
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width: 992px) {
+  .textometaverso h2 {
+    font-size: 2rem; }
+  .textometaverso p {
+    font-size: 1.25rem; } }
+
+@media only screen and (max-width: 768px) {
+  .textometaverso h2 {
+    font-size: 1.75rem; } }
 
 /*IMAGEN PRINCIPAL*/
 .color_caja {
@@ -790,14 +856,14 @@ section {
 
 .formulario {
   height: auto;
-  width: 100%;
+  width: 80%;
   text-align: center;
-  padding-right: 5em;
-  padding-left: 5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-top: 0em;
-  margin-bottom: 0em; }
+  margin-bottom: 0em;
+  margin-left: 10%;
+  margin-right: 10%; }
 
 .formulario input {
   border: 2px solid #343a40;
@@ -835,7 +901,7 @@ section {
   box-sizing: border-box;
   text-align: center; }
 
-/*CONTACTO*/
+/*TEXTO DE CONTACTO Y PNGs*/
 .contacto {
   background-image: linear-gradient(135deg, #001d3d, #000814, black);
   font-family: zaha;
@@ -854,36 +920,46 @@ section {
     margin-right: 1.5em;
     width: 4em;
     height: auto; }
-    .contacto li :hover {
-      transform: scale(1.15); }
+
+/*MEDIA PARA EL HOVER*/
+@media (hover: hover) {
+  li :hover {
+    transform: scale(1.15); } }
 
 .textocontacto1 {
   font-family: zaha;
   font-size: 1.5rem;
   color: #969696;
   text-align: left;
-  padding-right: 5em;
-  padding-left: 5em;
   padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 0em;
   margin-bottom: 0em;
-  margin-left: 0em;
-  margin-right: 0em; }
+  margin-left: 10%;
+  margin-right: 10%; }
 
 .textocontacto2 {
   font-family: zaha;
   font-size: 1.5rem;
   color: #969696;
   text-align: center;
-  padding-right: 5em;
-  padding-left: 5em;
   padding-top: 5em;
   padding-bottom: 1em;
   margin-top: 0em;
   margin-bottom: 0em;
-  margin-left: 0em;
-  margin-right: 0em; }
+  margin-left: 10%;
+  margin-right: 10%; }
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width: 992px) {
+  .textocontacto1 {
+    font-size: 1.25rem; }
+  .textocontacto2 {
+    font-size: 1.25rem; }
+  .formulario input {
+    font-size: 1.25rem; }
+    .formulario input textarea {
+      font-size: 1.25rem; } }
 
 footer {
   background-image: linear-gradient(135deg, #001d3d, #000814, black);
@@ -893,7 +969,7 @@ footer {
   margin-bottom: 5em;
   margin-left: 0em;
   margin-right: 0em; }
-  footer .footer_titulo {
+  footer h2 {
     color: #969696;
     padding: 1em;
     font-size: 2rem;
@@ -906,9 +982,17 @@ footer {
     margin-right: 1.5em;
     width: 4em;
     height: auto; }
-    footer li :hover {
-      transform: scale(1.15); }
 
 .pie {
   padding-top: 1em;
   padding-bottom: 2em; }
+
+/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
+@media only screen and (max-width: 992px) {
+  footer h2 {
+    font-size: 1.5rem; } }
+
+/*MEDIA PARA EL HOVER*/
+@media (hover: hover) {
+  li :hover {
+    transform: scale(1.15); } }
