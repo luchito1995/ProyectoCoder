@@ -30,13 +30,6 @@ footer {
     padding-bottom: 2em;
 }
 
-/*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
-@media only screen and (max-width:992px) {
-    footer h2 {
-        font-size: 1.5rem;
-    }
-}
-
 /*MEDIA PARA EL HOVER*/
 @media (hover: hover) {
     li :hover {
