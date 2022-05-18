@@ -106,14 +106,23 @@ img {
     width: 100vw;
     z-index: 1; } }
 
-@media screen and (max-width: 476px) {
-  nav h1 {
-    text-align: center; } }
-
 /*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
 @media only screen and (max-width: 980px) {
   nav h1 {
-    font-size: 2rem; } }
+    font-size: 2rem;
+    padding-right: 0.4rem; } }
+
+@media only screen and (max-width: 768px) {
+  nav h1 {
+    font-size: 1.75rem; }
+  .toggle-menu {
+    /*png*/
+    top: 1.2rem; } }
+
+@media only screen and (max-width: 576px) {
+  .toggle-menu {
+    /*png*/
+    right: 1rem; } }
 
 .textoIndex {
   font-family: zaha; }
@@ -145,7 +154,7 @@ section {
 
 @media only screen and (max-width: 768px) {
   .imagenIndex1 {
-    height: 80vh; } }
+    height: 90vh; } }
 
 /*IMAGENES DE ARQUITECTURA, URBANISMO Y METAVERSO*/
 .divIndex1 {
@@ -737,7 +746,7 @@ section {
 
 @media only screen and (max-width: 768px) {
   .imagenMetaverso1 {
-    height: 80vh; } }
+    height: 90vh; } }
 
 /*CARROUSEL*/
 .carrouselmetaverso {
@@ -833,7 +842,7 @@ section {
 
 @media only screen and (max-width: 768px) {
   .divContacto1 {
-    height: 80vh; } }
+    height: 90vh; } }
 
 /*FONDO CHICO DEL TEXTO GRACIAS POR VISITAR*/
 .caja {

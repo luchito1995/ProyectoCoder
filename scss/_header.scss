@@ -119,15 +119,28 @@ img {
     }
 }
 
-@media screen and (max-width: 476px) {
-    nav h1 {
-        text-align: center;
-    }
-}
-
 /*MEDIA QUERIE PARA REDUCIR EL TAMAÑO DE LETRA*/
 @media only screen and (max-width:980px) {
     nav h1 {
-            font-size: 2rem;
-        }
+        font-size: 2rem;
+        padding-right: 0.4rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    nav h1 {
+        font-size: 1.75rem;
+    }
+
+    .toggle-menu {
+        /*png*/
+        top: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .toggle-menu {
+        /*png*/
+        right: 1rem;
+    }
 }
