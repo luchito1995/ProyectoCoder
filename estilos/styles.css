@@ -121,6 +121,33 @@ img {
 section {
   background-image: linear-gradient(135deg, black, #000814, #001d3d); }
 
+/*IMAGEN PRINCIPAL*/
+.imagenIndex1 {
+  background-image: url(../imagenes/this.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  opacity: 0;
+  z-index: -1; }
+
+/*MEDIA QUERIE PARA LA IMAGEN DE ZAHA*/
+@media only screen and (max-width: 992px) {
+  .imagenIndex1 {
+    position: relative;
+    opacity: 1;
+    z-index: 0; }
+  .imagenIndex2 {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; } }
+
+@media only screen and (max-width: 768px) {
+  .imagenIndex1 {
+    height: 80vh; } }
+
+/*IMAGENES DE ARQUITECTURA, URBANISMO Y METAVERSO*/
 .divIndex1 {
   display: flex;
   justify-content: center;
@@ -686,6 +713,32 @@ section {
   .div1 p {
     font-size: 1.75rem; } }
 
+/*IMAGEN PRINCIPAL*/
+.imagenMetaverso1 {
+  background-image: url(../imagenes/metaverso.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0;
+  z-index: -1; }
+
+/*MEDIA QUERIE PARA LA IMAGEN DEL METAVERSO*/
+@media only screen and (max-width: 992px) {
+  .imagenMetaverso1 {
+    position: relative;
+    opacity: 1;
+    z-index: 0; }
+  .imagenMetaverso2 {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; } }
+
+@media only screen and (max-width: 768px) {
+  .imagenMetaverso1 {
+    height: 80vh; } }
+
 /*CARROUSEL*/
 .carrouselmetaverso {
   z-index: 0;
@@ -703,12 +756,6 @@ section {
     height: 25em; }
   .carrouselmetaverso img {
     height: 25em; } }
-
-@media only screen and (max-width: 768px) {
-  .carrouselmetaverso {
-    height: 20em; }
-  .carrouselmetaverso img {
-    height: 20em; } }
 
 /*VIDEO*/
 .video {
@@ -752,19 +799,43 @@ section {
     font-size: 1.25rem; } }
 
 /*IMAGEN PRINCIPAL*/
-.color_caja {
-  background-color: #ffffff10;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  z-index: 0; }
-
-.texto {
-  position: relative;
+.divContacto1 {
   display: inline-block;
   text-align: center;
   font-family: zaha;
+  background-image: url(../imagenes/b3.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0;
+  z-index: -1; }
+
+.divContacto2 {
+  display: inline-block;
+  text-align: center;
+  font-family: zaha;
+  position: relative;
+  opacity: 1;
   z-index: 0; }
 
+/*MEDIA QUERIE PARA LA IMAGEN DEL CONTACTO*/
+@media only screen and (max-width: 992px) {
+  .divContacto1 {
+    position: relative;
+    opacity: 1;
+    z-index: 0; }
+  .divContacto2 {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; } }
+
+@media only screen and (max-width: 768px) {
+  .divContacto1 {
+    height: 80vh; } }
+
+/*FONDO CHICO DEL TEXTO GRACIAS POR VISITAR*/
 .caja {
   display: flex;
   justify-content: center;
@@ -777,6 +848,12 @@ section {
   box-sizing: border-box;
   width: 60%;
   height: 30%;
+  z-index: 0; }
+
+.color_caja {
+  background-color: #ffffff10;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: 0; }
 
 /*FORMULARIO*/

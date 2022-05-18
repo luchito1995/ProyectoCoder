@@ -1,3 +1,36 @@
+/*IMAGEN PRINCIPAL*/
+.imagenMetaverso1 {
+    background-image: url(../imagenes/metaverso.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+/*MEDIA QUERIE PARA LA IMAGEN DEL METAVERSO*/
+@media only screen and (max-width:992px) {
+    .imagenMetaverso1 {
+        position: relative;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    .imagenMetaverso2 {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .imagenMetaverso1 {
+        height: 80vh;
+    }
+}
+
 /*CARROUSEL*/
 .carrouselmetaverso {
     z-index: 0;
@@ -19,16 +52,6 @@
 
     .carrouselmetaverso img {
         height: 25em;
-    }
-}
-
-@media only screen and (max-width:768px) {
-    .carrouselmetaverso {
-        height: 20em;
-    }
-
-    .carrouselmetaverso img {
-        height: 20em;
     }
 }
 

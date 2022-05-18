@@ -1,19 +1,49 @@
 /*IMAGEN PRINCIPAL*/
-.color_caja {
-    background-color: #ffffff10;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    z-index: 0;
-}
-
-.texto {
-    position: relative;
+.divContacto1 {
     display: inline-block;
     text-align: center;
     font-family: zaha;
+    background-image: url(../imagenes/b3.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.divContacto2 {
+    display: inline-block;
+    text-align: center;
+    font-family: zaha;
+    position: relative;
+    opacity: 1;
     z-index: 0;
 }
 
+/*MEDIA QUERIE PARA LA IMAGEN DEL CONTACTO*/
+@media only screen and (max-width:992px) {
+    .divContacto1 {
+        position: relative;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    .divContacto2 {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .divContacto1 {
+        height: 80vh;
+    }
+}
+
+/*FONDO CHICO DEL TEXTO GRACIAS POR VISITAR*/
 .caja {
     display: flex;
     justify-content: center;
@@ -26,6 +56,13 @@
     box-sizing: border-box;
     width: 60%;
     height: 30%;
+    z-index: 0;
+}
+
+.color_caja {
+    background-color: #ffffff10;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     z-index: 0;
 }
 

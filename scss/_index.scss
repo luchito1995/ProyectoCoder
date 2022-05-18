@@ -6,6 +6,40 @@ section {
     background-image: linear-gradient(135deg, black, #000814, #001d3d);
 }
 
+/*IMAGEN PRINCIPAL*/
+.imagenIndex1 {
+    background-image: url(../imagenes/this.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+/*MEDIA QUERIE PARA LA IMAGEN DE ZAHA*/
+@media only screen and (max-width:992px) {
+    .imagenIndex1 {
+        position: relative;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    .imagenIndex2 {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .imagenIndex1 {
+        height: 80vh;
+    }
+}
+
+/*IMAGENES DE ARQUITECTURA, URBANISMO Y METAVERSO*/
 .divIndex1 {
     display: flex;
     justify-content: center;
